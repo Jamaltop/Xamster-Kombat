@@ -1,0 +1,388 @@
+@import "./reset.css";
+
+:root{
+    --background:#000;
+    --text:#fff;
+}
+body{
+    background: var(--background);
+    color: var(--text);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    letter-spacing: -2%;
+    line-height: 110%;
+    
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    
+   
+}
+.container{
+    margin-inline:auto; 
+    padding-inline: 15px;
+    width: 100%;
+    
+    max-width: 1230px;
+}
+.hamster{
+   
+    overflow: hidden;
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    height: 1058px;
+    border-radius: 50px;
+
+    h1{
+        margin-top: 40px;
+        margin-bottom: 55px;
+        text-align: center;
+    }
+}
+.hamster__top{
+    position: absolute;
+    inset: 0;
+    transform: translateX(-2px) translateY(-20px);
+    height: 296px;
+    z-index: -2;
+    border-radius: 50px;
+    background: linear-gradient(180deg,rgb(33,36,41) 38.345%,rgb(249,216,56) 100%);
+    transition: all 0.3s ease 0s;
+    .mine-active &{
+        top: -150px;
+    }
+}
+.top-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 30px;
+    font-weight: 600;
+    font-size: 14px;
+
+}
+.top-info__item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hamster-main{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width:428px;
+    height: 762px;
+   top: 164px;
+   border-top: 3px solid gold;
+   border-radius: 50px;
+   background-color: #2C2F35;
+}
+.hamster-main-top-info{
+    display: flex;
+    gap: 10px;
+    transform: translateY(30px);
+    
+    width: Hug (369px);
+    height: Hug (50px);
+
+}
+
+
+.top-info__btn{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(78, 73, 73, 0.2) 100%);
+    width: 90.44644927978516;
+    height: 35;
+    border-radius: 10.58px;
+    gap: 8.14px;
+    padding: 8.14px;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+.info-div{
+    width: 117px;
+height: 50px;
+font-size: 12.2px;
+border-radius: 10px;
+
+padding-top: 8px;
+padding-right: 10px;
+padding-bottom: 8px;
+padding-left: 10px;
+gap: 7px;
+background: #32363C; 
+
+.first{
+    display: flex;
+    justify-content: center;
+    width: 57;
+height: 12;
+color:  #F79841;
+
+
+}
+.second{
+    display: flex;
+    justify-content: center;
+    width: 78;
+height: 12;
+color:#6F72E2;
+}
+.tridth{
+    display: flex;
+    justify-content: center;
+    width: 69;
+height: 12;
+
+   color: #84CB69;
+}
+
+}
+.info-head{
+    align-items: end;
+    justify-content: center;
+    display: flex;
+   
+}
+.hamster-main-info-bottom img{
+    width: 34.88135528564453;
+height: 34.88135528564453;
+top: 3.56px;
+left: 3.56px;
+
+}
+.hamster-main-info-bottom{
+    width: 206px;
+    height: 46px;
+    position: absolute;
+    top: 130px;
+    display: flex;
+    justify-content: center;
+    
+    left: 111px;
+    gap: 8px;
+    
+p{
+    width: 156px;
+height: 46px;
+display: flex;
+align-items: flex-end;
+font-weight: 700;
+font-size: 38px;
+line-height: 110.00000000000001%;
+letter-spacing: -2%;
+
+}
+}
+
+.hamster-main-info-points{
+position: absolute;
+    width: 368px;
+    height: 24px;
+    top: 220px;
+    left: 30px;
+    display: flex;  
+    flex-direction: column;
+    gap: 8px;
+
+#little__point{
+    width: 2%;
+height: 9px;
+top: 339px;
+transition: width 0.3s ease;
+left: 30px;
+border-radius: 30px;
+background: linear-gradient(90deg, #ADFAA1 0%, #C597CC 45%, #2F39A3 100%);
+
+
+}
+
+    .hamster__points{
+        background: #32363C;
+
+        border: 0.5px solid #555555BF;
+        width: 368px;
+height: 9px;
+top: 339px;
+left: 30px;
+border-radius: 30px;
+border-width: 0.5px;
+
+    }
+.names{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+h3{
+    width: 13px;
+height: 8px;
+font-weight: 500;
+        font-size: 10px;
+        white-space: nowrap;      
+        text-overflow: ellipsis;   
+        max-width: 100%; 
+font-weight: 500;
+
+line-height: 110.00000000000001%;
+letter-spacing: -2%;
+
+
+}
+    p{
+        width: 32px;
+        height: 8px;
+        top: 324px;
+        left: 350px;
+      
+        font-weight: 500;
+        font-size: 10px;
+        white-space: nowrap;      
+        text-overflow: ellipsis;   
+        max-width: 100%; 
+        line-height: 110.00000000000001%;
+        letter-spacing: -2%;
+        
+    }
+   
+
+}
+.hamster-orig{
+    width: 322.8822021484375px;
+height: 322.8822021484375px;
+display: flex;
+transition: all 0.3s ease;
+justify-content: center;
+align-items: flex-end;
+
+position: absolute;
+left: 53px;
+
+img{
+    width: 164px;
+    height: 273px;
+    top: 468px;
+    transform: translateY(-170px);
+    position: absolute;
+    left: calc(50% - 82px);
+   
+
+
+}
+.hamster-background{
+    width: 322.8822021484375px;
+    height: 322.8822021484375px;
+    position: absolute;
+    top: 448px;
+    border-radius: 50%;
+    left: calc(50% - 161px);
+    transform: translateY(-170px);
+    background: linear-gradient(181.41deg, #5155DA 1.2%, #2B2D74 65.02%);
+
+    .hamster__background{
+        z-index: 1000;
+        width: 294px;
+        background: linear-gradient(180deg, #35389E 0%, #1C2848 98%);
+border-radius: 50%;
+height: 294px;
+top: 463px;
+position: absolute;
+left: calc(50% - 161px);
+transform: translateY(-450px) translateX(13px);
+
+    }
+   
+}
+
+}
+.hamster__bottom-energy{
+    width: 370.44854736328125px;
+height: 34.61503982543945px;
+top: 800px;
+left: 28px;
+background: #32363C;
+display: flex;
+background: transparent;
+transform: translateY(-200px);
+position: absolute;
+justify-content: space-between;
+p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.hamster-energy{
+    gap: 9px;
+    display: flex;
+    align-items: center;
+}
+
+}
+
+.hamster-bottom-all-pril{
+    width: 368px;
+height: 60px;
+gap: 10px;
+border-radius: 12px;
+display: flex;
+justify-content: space-between;
+top: 850px;
+background: rgba(50, 54, 60, 0.7);
+padding: 5px 10px;
+position: absolute;
+transform: translateY(-200px);
+
+left: 30px;
+.hamster__bottom-all_first{
+    color: grey;
+    width: 65px;
+height: 50px;
+top: 5px;
+left: 5px;
+
+border-radius: 8px;
+padding-top: 5px;
+padding-right: 10px;
+padding-bottom: 5px;
+padding-left: 10px;
+gap: 2px;
+display: flex;
+flex-direction: column;
+
+
+
+
+
+img{
+    display: flex;
+    transform: translateX(11px);
+    width: 25px;
+}
+p{
+    
+    transform: translateX(-2px);
+    font-size: 12px;
+}
+}
+
+}
+
+
+.hamster-orig:active{
+transform: scale(0.95) translateY(10px);
+
+}
+
+
+
+
+  
