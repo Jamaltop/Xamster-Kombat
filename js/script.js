@@ -41,7 +41,9 @@ function startEnergyRecovery() {
             energyInterval = null;
         } else {
             energy += 20;
-            energyOrig.innerHTML = `${energy}/6500`;
+            energyOrig.innerHTML = `${energy}&nbsp;/&nbsp;6500`;
+
+
         }
     }, 1000);
 }
@@ -81,7 +83,8 @@ function handlerHamster() {
     }
 
     origMoney.innerHTML = money;
-    energyOrig.innerHTML = `${energy}/6500`;
+    energyOrig.innerHTML = `${energy}&nbsp;/&nbsp;6500`;
+
 }
 
 hamster.addEventListener('click', handlerHamster);
