@@ -18,6 +18,7 @@ const dayliEarn = document.querySelector('.hamster-daily_earn');
 const hamsterSection = document.querySelector('.hamster__section');
 const exchange = document.querySelector('#hamster-exchange');
 const check = document.getElementById('checkTrue');
+const matketPriloj = document.querySelectorAll('.section-first');
 
 let currentLevel = 0;
 let money = 0;
@@ -89,7 +90,7 @@ function handlerHamster() {
     hamsterBackground.style.width = `${progressPercent}%`;
 
     if (money >= currentGoal) {
-        money = 0;
+        
         energyIndex++;
         if (energyIndex >= energyGoals.length) energyIndex = energyGoals.length - 1;
 
@@ -112,11 +113,11 @@ function handlerHamster() {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-    // загрузка из localStorage, если нужно
+
     setTimeout(() => {
         money = 6360000;
         origMoney.innerHTML = money;
-    }, 100000);
+    }, 1000000);
 });
 
 hamster.addEventListener('click', handlerHamster);
@@ -176,7 +177,7 @@ mine.addEventListener('click', () => {
     niz.style.background = 'rgb(44, 50, 58)';
     niz.style.zIndex = '1000';
     setTimeout(() => {
-        hamsterMarketNtt.style.display = 'flex';
+        hamsterMarketNtt.style.display = 'grid';
         hamsterSection.style.display = 'flex';
         daily_earn.style.display = 'flex';
         mainNft.style.display = 'flex';
@@ -204,4 +205,13 @@ exchange.addEventListener('click', () => {
         energyBar.style.display = 'flex';
         hamsterFistBackground.style.display = 'flex';
     }, 300);
+});
+
+matketPriloj.forEach(matket => {
+    matket.addEventListener('click', () => {
+        matketPriloj.forEach(p => {
+         p.classList.remove('firts')
+        });
+      matket.classList.add('firts')
+    });
 });
